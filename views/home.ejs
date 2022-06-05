@@ -1,0 +1,21 @@
+
+  <%- include('header'); -%>
+
+  <ul class="nav navbar-nav navbar-right">
+  <li id="contact"><a href="/compose">Compose</a></li>
+  </ul>
+
+      <p><%= StartingContent %></p>
+
+
+        <%posts.forEach(myFunction);%>
+ 
+        <%function myFunction(post) {%>
+    <!-- <% console.log(post.title); %> -->
+   
+  <h1> <%=  post.title; %>  </h1>
+  <%=   post.content.substring(0,100)+" ..............."; %>
+  <a href="/posts/<%=post.title%>">Read more</a>
+    <% }%>
+ 
+           <%- include('footer'); -%>

@@ -1,0 +1,8 @@
+<% for(var i=0;i<posts.length;i++){  %>
+    <p><%= posts[i].title %>:<%= posts[i].content %></p>
+    <% } %>
+
+
+    <%  posts.forEach(myFunction(post){ %>
+        
+        <% }) %>

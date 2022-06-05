@@ -1,0 +1,22 @@
+
+
+  <%- include('header'); -%>
+
+
+  <div class="container">
+      <form class="item" action="/compose" method="post">
+        <div class="form-group">
+            <label for="exampleInputEmail1">Title</label>
+            <input class="form-control" style="padding-top: 0px;" type="text" name="title" placeholder="New Post" autocomplete="on">
+          </div>
+          <div class="form-group">
+            <label for="post">POST</label>
+        <textarea class="form-control"  style="padding-top: 0px;" rows = "4" cols = "100" name = "post" placeholder="Post description ">
+         </textarea>
+        </div>
+        <button class="btn btn-sm btn-dark" type="submit" name="button" value="">Publish</button>
+      </form>
+
+    </div>
+
+      <%- include('footer'); -%>
